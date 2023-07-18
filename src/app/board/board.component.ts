@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BoardComponent implements OnInit {
   squares: any[] | undefined;
+  xIsNext: boolean | undefined;
 
   constructor() { }
 
