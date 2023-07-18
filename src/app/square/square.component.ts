@@ -2,9 +2,18 @@ import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-square',
-  templateUrl: './square.component.html',
+  template: `
+      <p>
+        {{ randomNumber }}
+      </p>
+    `,
   styleUrls: ['./square.component.scss']
 })
 export class SquareComponent {
-  @Input() value: 'X' | 'O';
+
+  randomNumber: number | undefined;
+
+  constructor() {
+    setInterval(() => this.randomNumber = Math.random(), 500);
+  }
 }
