@@ -26,6 +26,8 @@ export class BoardComponent implements OnInit {
     return this.xIsNext ? 'X' : 'O';
   }
 
-  makeMove(idx: number) { }
+  makeMove(idx: number) {
+    if (!this.squares[idx]) { }
+  }
 
 }
