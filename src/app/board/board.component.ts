@@ -22,6 +22,8 @@ export class BoardComponent implements OnInit {
     this.xIsNext = true;
   }
 
-  get player() { }
+  get player() {
+    return this.xIsNext ? 'X' : 'O';
+  }
 
 }
