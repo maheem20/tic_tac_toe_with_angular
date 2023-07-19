@@ -27,7 +27,9 @@ export class BoardComponent implements OnInit {
   }
 
   makeMove(idx: number) {
-    if (!this.squares[idx]) { }
+    if (!this.squares[idx]) {
+      this.squares.splice(idx, 1, this.player);
+    }
   }
 
 }
