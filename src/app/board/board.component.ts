@@ -22,4 +22,6 @@ export class BoardComponent implements OnInit {
     this.xIsNext = true;
   }
 
+  get player() { }
+
 }
