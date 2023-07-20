@@ -58,6 +58,8 @@ export class BoardComponent implements OnInit {
         return this.squares![a];
       }
     }
+
+    return null;
   }
 
 }
